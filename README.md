@@ -211,7 +211,6 @@ int main( void ) {
 
 <section class="related">
 
-
 </section>
 
 <!-- /.related -->
@@ -237,7 +236,7 @@ For more information on the project, filing bug reports and feature requests, an
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -284,7 +283,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [hyperbolic-arcsine]: https://en.wikipedia.org/wiki/Inverse_hyperbolic_function
 
 <!-- <related-links> -->
-
 
 <!-- </related-links> -->
 
