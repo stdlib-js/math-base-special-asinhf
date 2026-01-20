@@ -35,14 +35,32 @@ limitations under the License.
 
 > Compute the [hyperbolic arcsine][hyperbolic-arcsine] of a single-precision floating-point number.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-asinhf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import asinhf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asinhf@deno/mod.js';
+var asinhf = require( '@stdlib/math-base-special-asinhf' );
 ```
 
 #### asinhf( x )
@@ -83,9 +101,9 @@ v = asinhf( Infinity );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import asinhf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asinhf@deno/mod.js';
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var asinhf = require( '@stdlib/math-base-special-asinhf' );
 
 var opts = {
     'dtype': 'float32'
@@ -101,12 +119,97 @@ logEachMap( 'asinhf(%0.4f) = %0.4f', x, asinhf );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/asinhf.h"
+```
+
+#### stdlib_base_asinhf( x )
+
+Computes the [hyperbolic arcsine][hyperbolic-arcsine] of a single-precision floating-point number.
+
+```c
+float out = stdlib_base_asinhf( 2.0f );
+// returns ~1.444f
+
+out = stdlib_base_asinhf( -2.0f );
+// returns ~-1.444f
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+float stdlib_base_asinhf( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/asinhf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    float x;
+    float v;
+    int i;
+
+    for ( i = 0; i < 100; i++ ) {
+        x = ( (float)rand() / (float)RAND_MAX ) * 100.0f;
+        v = stdlib_base_asinhf( x );
+        printf( "asinhf(%f) = %f\n", x, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
-
 
 </section>
 
@@ -121,7 +224,7 @@ logEachMap( 'asinhf(%0.4f) = %0.4f', x, asinhf );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -133,7 +236,7 @@ For more information on the project, filing bug reports and feature requests, an
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -180,7 +283,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [hyperbolic-arcsine]: https://en.wikipedia.org/wiki/Inverse_hyperbolic_function
 
 <!-- <related-links> -->
-
 
 <!-- </related-links> -->
 
