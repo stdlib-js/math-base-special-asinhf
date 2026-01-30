@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import asinhf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asinhf@esm/index.mjs';
+import asinhf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asinhf@v0.1.0-esm/index.mjs';
 ```
 
 #### asinhf( x )
@@ -90,7 +90,7 @@ v = asinhf( Infinity );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import asinhf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asinhf@esm/index.mjs';
+import asinhf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asinhf@v0.1.0-esm/index.mjs';
 
 var opts = {
     'dtype': 'float32'
